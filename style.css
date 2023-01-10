@@ -173,7 +173,7 @@ p {
   font-style: normal;
 }
 .cv ul {
-  list-style: square;
+  list-style: none;
 }
 .erfaring > ul > li,
 .skills > ul > li {
