@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="https://use.typekit.net/bma7kkj.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <title>Forside</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" onclick="forside_link()"></div>
+      <nav>
+        <div class="menu">
+          <button type="button" class="menu_knap" id="portfolio_knap" onclick="portfolio_link()">Portfolio</button>
+          <button type="button" class="menu_knap" id="om_mig_knap" onclick="om_mig_link()">Om Mig</button>
+        </div>
+      </nav>
+      <div class="burger_knap" onclick="toggle_menu()">
+        <div class="menu_open">Menu</div>
+        <div class="menu_close hide_menu_toggle">Luk</div>
+      </div>
+    </header>
+    <main>
+      <div id="forside_tekst">
+        <h1>
+          <span class="headline_top_forside">Portfolio</span> <br />
+          <span class="headline_bottom_forside">KEA_MMD_E22</span>
+        </h1>
+<div class="forside_navigation">
+  <div onclick="portfolio_link()">
+  <span>Portfolio</span>
+  </div>
+  <div  onclick="forside_link()">
+    <span>Forside</span>
+  </div>
+  <div  onclick="om_mig_link()">
+    <span>Om Mig</span>
+  </div>
+</div>
+      </div>
+    </main>
+    <script src="navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+/* GENERELT */
+* {
+  --custom_black: #000000;
+  --custom_white: #ffffff;
+  --custom_yellow: #f7df1e;
+  --custom_grey: #1f1f1f;
+}
+body {
+  background-color: var(--custom_black);
+}
+header {
+  background: linear-gradient(var(--custom_black), transparent);
+}
+h1,
+.galleri_box {
+  font-family: mundial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--custom_white);
+}
+p {
+  font-family: mundial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+::selection {
+  background: var(--custom_yellow);
+  color: var(--custom_black);
+}
+/* GENERELT */
+
+/* FORSIDE */
+#forside_tekst {
+  margin: auto;
+  justify-content: center;
+  color: var(--custom_white);
+  text-align: center;
+  padding: 1rem;
+    padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#forside_tekst > h1,
+.forside_navigation {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: fit-wide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-stroke: 2px var(--custom_white);
+  -webkit-text-fill-color: var(--custom_black);
+}
+.forside_navigation {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  align-items: center;
+  text-align: start;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* FORSIDE */
+
+/* MENU */
+.menu_knap {
+  font-family: input-mono, monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: var(--custom_white);
+  background-color: var(--custom_black);
+  border: 0;
+}
+.burger_knap > *:hover {
+  color: var(--custom_black);
+  background-color: var(--custom_yellow);
+  z-index: 1000;
+}
+.burger_knap {
+  font-family: input-mono, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--custom_white);
+  background-color: transparent;
+  border: 0;
+}
+.menu_knap:hover, .forside_navigation span:hover {
+  color: var(--custom_black);
+  background-color: var(--custom_yellow);
+  -webkit-text-stroke: 0px;
+}
+/* MENU */
+
+/* PORTFOLIO */
+.galleri_box {
+  font-family: input-mono, monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--custom_white);
+  /*   outline: solid 1px var(--custom_white); */
+}
+.galleri_box:hover {
+  color: var(--custom_black);
+  background-color: var(--custom_yellow);
+}
+.popup {
+  color: var(--custom_white);
+  background-color: var(--custom_black);
+  overflow: scroll;
+}
+.popup_close {
+  font-family: input-mono, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup_close:hover,
+.popup a:hover {
+  color: var(--custom_black);
+  background-color: var(--custom_yellow);
+}
+.popup_image {
+  max-width: 500px;
+  padding: 1rem;
+}
+.popup_image > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-block: 1rem;
+}
+.popup a {
+  color: var(--custom_white);
+  text-decoration: none;
+}
+/* PORTFOLIO */
+
+/* OM MIG */
+.portrait {
+  display: flex;
+  background-color: var(--custom_grey);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+.portrait > img {
+  max-width: 100%;
+  padding: 1rem;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+.om_mig_tekst,
+.cv {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: var(--custom_white);
+  text-align: center;
+  max-width: 75ch;
+  gap: 1rem;
+  font-family: mundial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.cv ul {
+  list-style: square;
+}
+.erfaring > ul > li,
+.skills > ul > li {
+  margin-block: 1rem;
+}
+/* OM MIG */
