@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="https://use.typekit.net/bma7kkj.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <title>Om mig</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" onclick="forside_link()"></div>
+      <nav>
+        <div class="menu">
+          <button type="button" class="menu_knap" id="portfolio_knap" onclick="portfolio_link()">Portfolio</button>
+          <button type="button" class="menu_knap" id="om_mig_knap" onclick="om_mig_link()">Om Mig</button>
+        </div>
+      </nav>
+      <div class="burger_knap" onclick="toggle_menu()">
+        <div class="menu_open">Menu</div>
+        <div class="menu_close hide_menu_toggle">Luk</div>
+      </div>
+    </header>
+    <main>
+      <div id="om_mig_side">
+        <div class="portrait">
+          <img src="Content/portrait.webp" alt="" />
+        </div>
+        <div class="om_mig_tekst">
+          <h1>Hvem er Jeg?</h1>
+          <p>
+            Jeg hedder Malte Hvidtfeldt Reich Jensen. Jeg er født og opvokset i den lille nordvestsjællandske ferieby: Rørvig. Jeg har gået i folkeskole på Rørvig Friskole, en skole med løsere rammer
+            end de fleste andre folkeskoler, med plads til at være unik og kreativ. <br />
+            Efter Folkeskolen, startede jeg i gymnasiet på Odsherred Gymnasium, hvor jeg, udover at blive student, også mødte min nuværende kæreste; Emma, som jeg bor sammen med i en lejlighed i
+            Sorgenfri. <br />
+            <br />
+            Efter gymnasiet tog jeg 2 sabbatår hvor jeg blandt andet arbejdede hos DPA microphones, i Børnehaver, både i København og Odsherred, som pædagogmedhjælper og som bartender hos Strandlyst
+            Streetfood. <br />
+            <br />
+            I de 2 sabbatår samlede jeg også nogle kreative færdigheder op, såsom 3D-modelering og rendering i blender, vektor design i Inkscape og hjemmeside design i WordPress. <br />
+            <br />
+          </p>
+          <p>
+            Efter de 2 sabbatår, startede jeg med at studere på DTU som bygningsdesigner, men efter første semester, fandt jeg ud af at det ikke var noget for mig og derfor droppede jeg ud af den
+            uddannelse. <br />
+            <br />
+            Imens at jeg var i gang med Studiet på DTU, blev jeg diagnosticeret med ADHD og Aspergers, som forklarede en hel del om mine særligt nørdede interesser og generelle apati for fag jeg ikke
+            synes er interessante. <br />
+            <br />
+            Jeg Tager medicin for min ADHD, som hjælper en hel del, men det er stadig lidt at et benspænd når det kommer til klasseværelset. Mine diagnoser gør også at jeg ikke kan passe et arbejde
+            ved siden af studiet, og jeg modtager derfor både handicaptillæg og SPS. <br />
+            <br />
+            Jeg startede på Multimediedesign som en lidt impulsiv beslutning, men det har i den grad betalt sig. Det er første gang at jeg har været på en uddannelse hvor jeg både spiller socialt og
+            fagligt, samt første uddannelse hvor jeg kan udfordre mig selv fagligt uden at få hug for det.
+          </p>
+        </div>
+        <div class="cv">
+          <div class="erfaring">
+            <h2>Erfaring og Uddannelse</h2>
+            <ul>
+              <li>Student fra Odsherred Gymnasium</li>
+              <li>pædagogmedhjælper i Børnehuset Egevolden og Sankt Georgegårdens børnehave Nykøbing Sjælland</li>
+              <li>Bartender hos Strandlyst Streetfood</li>
+              <li>Produktionsmedarbejde hos DPA Microphones</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h2>Færdigheder</h2>
+            <ul>
+              <li>Kodning i HTML, CSS og JavaScript</li>
+              <li>3D Modelering og Rendering i Blender</li>
+              <li>Vector Design</li>
+              <li>Photoshop på et moderat Niveau</li>
+              <li>Hjemmesider i WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="navigation.js"></script>
+  </body>
+</html>
